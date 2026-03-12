@@ -1,0 +1,52 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1530648964902-50b2c068ad32');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#login-container, #app-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, select, button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+}
+
+button {
+  background-color: #00bfff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007acc;
+}
+
+.physics-img {
+  width: 100px;
+  margin: 20px auto;
+  display: block;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 1.2em;
+  background-color: rgba(0, 128, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Física Básica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login -->
+  <div id="login-container">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="username" placeholder="Usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
+  </div>
+
+  <!-- Aplicación -->
+  <div id="app-container" style="display: none;">
+    <h1>Calculadora de Física Básica</h1>
+
+    <!-- Imagen decorativa -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Newton's_cradle_animation_book_2.gif/320px-Newton's_cradle_animation_book_2.gif" alt="Física" class="physics-img">
+
+    <!-- Menú de cálculos -->
+    <label for="calc-type">Selecciona un cálculo:</label>
+    <select id="calc-type" onchange="mostrarFormulario()">
+      <option value="">-- Elegir --</option>
+      <option value="velocidad">Velocidad (v = d / t)</option>
+      <option value="fuerza">Fuerza (F = m × a)</option>
+      <option value="trabajo">Trabajo (W = F × d)</option>
+    </select>
+
+    <!-- Formularios -->
+    <div id="formulario"></div>
+
+    <!-- Resultado -->
+    <div id="resultado" class="resultado"></div>
+
+    <!-- Audio -->
+    <audio id="sonido" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
